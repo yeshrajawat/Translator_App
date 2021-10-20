@@ -13,7 +13,7 @@ import com.google.mlkit.nl.translate.TranslateLanguage
 import com.google.mlkit.nl.translate.Translation
 import com.google.mlkit.nl.translate.Translator
 import com.google.mlkit.nl.translate.TranslatorOptions
-import kotlinx.android.synthetic.main.activity_main.*
+
 import kotlinx.android.synthetic.main.activity_main2.*
 import java.util.*
 
