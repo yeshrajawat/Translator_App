@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:background="@color/darkGray"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/darkGray"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity2">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:id="@+id/inputLayoutFrom"
+            android:layout_margin="20dp"
+            app:boxStrokeColor="@color/yellow"
+            android:textColorHint="@color/yellow"
+
+
+
+            android:hint="@string/from"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:id="@+id/autoCompleteTextFrom"
+                android:textStyle="bold"
+                android:inputType="none"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:text="@string/english"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/translateIcon"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputLayoutFrom"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/translation_icon"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:id="@+id/inputLayoutTo"
+            android:layout_margin="20dp"
+            android:hint="@string/to"
+            app:boxStrokeColor="@color/yellow"
+            android:textColorHint="@color/yellow"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/translateIcon">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:id="@+id/autoCompleteTextTo"
+                android:textStyle="bold"
+                android:inputType="none"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:text="@string/german"/>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/inputTextFrom"
+            android:hint="@string/from"
+            app:boxStrokeColor="@color/yellow"
+            android:textColorHint="@color/yellow"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputLayoutTo"
+            android:layout_margin="20dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:id="@+id/textFrom"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/inputTextTo"
+            android:hint="@string/to"
+            android:orientation="horizontal"
+            app:boxStrokeColor="@color/yellow"
+            android:textColorHint="@color/yellow"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputTextFrom"
+            android:layout_margin="20dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:id="@+id/textTo"
+                android:enabled="false"
+                android:textSize="20dp"
+                android:inputType="none"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/transparent"
+    android:src="@drawable/audio"
+    android:id="@+id/audioIcon"
+    app:layout_constraintLeft_toRightOf="@id/inputTextTo"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/inputTextFrom"
+    android:layout_marginLeft="-70dp"
+    android:layout_marginTop="30dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

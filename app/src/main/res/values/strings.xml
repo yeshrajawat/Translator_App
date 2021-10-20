@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Translate Text App</string>
+    <string name="english">English</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="german">German</string>
+
+
+    <string-array name="language">
+        <item>English</item>
+        <item>German</item>
+        <item>Spanish</item>
+        <item>Hindi</item>
+        <item>Russian</item>
+        <item>Korean</item>
+        <item>Chinese</item>
+
+    </string-array>
+</resources>
